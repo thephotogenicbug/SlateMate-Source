@@ -39,12 +39,26 @@ const useStyles = makeStyles((theme) => ({
      textAlign:'justify', 
      margin:'5%', 
      backgroundSize:'100%',
-     [theme.breakpoints.down("sm")]:{
+     [theme.breakpoints.down("xs")]:{
        textAlign:"center",
        fontSize:'45px',
        margin:'3%', 
-
-     }
+     },
+ 
+  },
+  heading:{
+    color:'#eb59ae',
+    fontWeight: 'bold', 
+    fontSize:'60px',
+    textAlign:'justify', 
+    margin:'5%', 
+    backgroundSize:'100%',
+     [theme.breakpoints.down("sm")]:{
+       textAlign:"center",
+       fontSize:'40px',
+       margin:'3%', 
+     },
+ 
   },
   paragraph:{
     color:'#ffff', 
@@ -97,7 +111,7 @@ function App() {
         </Paper>
         
       </Grid>
-      <Grid item xs={12} md={6} >
+      <Grid item xs={12} md={6}  >
           <CardMedia className={classes.media} image="student.png" />
       </Grid>
       <Grid item xs={6} md={4}   container  justify="center" alignItems="flex-start">
